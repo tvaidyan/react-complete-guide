@@ -23,6 +23,7 @@ const Expenses = (props) => {
           if (expense.date.getFullYear().toString() === filteredYear) {
             return (
               <ExpenseItem
+                key={expense.id}
                 title={expense.title}
                 amount={expense.amount}
                 date={expense.date}
